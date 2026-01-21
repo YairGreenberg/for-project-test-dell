@@ -1,0 +1,185 @@
+/* איפוס בסיסי */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* פתרון פשוט לציפה של אלמנטים */
+}
+
+/* Header & Navbar */
+.main-header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 5%;
+    text-align: center;
+}
+
+.navbar {
+    background: #444;
+    padding: 0.5rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block; /* הצבה אחד ליד השני ללא Flex */
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+.hero {
+    background: #fff;
+    padding: 2rem;
+    margin: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #333;
+}
+
+/* Cards Section using Floats */
+.content-section {
+    margin: 20px 0;
+}
+
+.card {
+    width: 48%; /* כמעט חצי מהרוחב */
+    float: right; /* הצמדה לימין (מתאים ל-RTL) */
+    margin-left: 4%; /* רווח בין הכרטיסים */
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.card:last-child {
+    margin-left: 0; /* ביטול רווח לכרטיס האחרון בשורה */
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-text {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Clearfix - חשוב מאוד כשמשתמשים ב-Float */
+.clear {
+    clear: both;
+}
+
+/* Footer */
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* עיצוב כללי למקטע הטופס */
+.registration-section {
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.registration-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* הגבלת רוחב הטופס ומרכוזו */
+.reg-form {
+    max-width: 500px;
+    margin: 0 auto; /* מרכוז ללא flex */
+}
+
+/* רווח בין שדות */
+.form-group {
+    margin-bottom: 15px;
+    overflow: hidden; /* לניקוי floats אם נשתמש בהם */
+}
+
+/* עיצוב התוויות */
+.form-group label {
+    display: block; /* גורם ללייבל להיות בשורה נפרדת מעל הקלט */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* עיצוב תיבות הקלט */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%; /* תופס את כל רוחב הטופס */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* עיצוב כפתורי רדיו (inline) */
+.radio-group {
+    padding: 5px 0;
+}
+
+.radio-group input {
+    vertical-align: middle;
+}
+
+.radio-label {
+    display: inline-block !important; /* מבטל את ה-block של הלייבל הכללי */
+    margin-left: 15px;
+    font-weight: normal !important;
+}
+
+/* כפתור שליחה */
+.submit-btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}

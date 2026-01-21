@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>תבנית מבחן - דף 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>test</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">בית</a></li>
+          <li><a href="#">אודות</a></li>
+          <li><a href="#">שירותים</a></li>
+          <li><a href="#">צור קשר</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>wellcom</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, atque.</p>
+      </section>
+
+      <section class="content-section">
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200" alt="תמונה לדוגמה" />
+          <div class="card-text">
+            <h3>כותרת תמונה</h3>
+            <p>כאן מופיע הסבר קצר מתחת לתמונה, מעוצב בתוך כרטיס מסודר.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200" alt="תמונה לדוגמה" />
+          <div class="card-text">
+            <h3>כותרת תמונה</h3>
+            <p>כאן מופיע הסבר קצר מתחת לתמונה, מעוצב בתוך כרטיס מסודר.</p>
+          </div>
+        </article>
+
+        <section class="registration-section">
+          <h2>טופס הרשמה למערכת</h2>
+          <form action="#" method="post" class="reg-form">
+            <div class="form-group">
+              <label for="fname">שם מלא:</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="הכנס שם מלא..."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">אימייל:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pass">סיסמה:</label>
+              <input type="password" id="pass" name="password" />
+            </div>
+
+            <div class="form-group">
+              <label>מגדר:</label>
+              <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label class="radio-label" for="male">זכר</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label class="radio-label" for="female">נקבה</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="submit-btn">שלח הרשמה</button>
+            </div>
+          </form>
+        </section>
+
+        <div class="clear"></div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>כל הזכויות שמורות &copy; 2026</p>
+    </footer>
+  </body>
+</html>

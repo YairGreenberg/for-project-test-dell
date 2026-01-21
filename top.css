@@ -1,0 +1,56 @@
+/* =========================================
+   6. GALLERY SECTION (גלריה 3 עמודות)
+   ========================================= */
+.gallery-section {
+    padding: 20px 0;
+}
+
+.gallery-item {
+    width: 31.33%; /* חישוב של 1/3 פחות רווחים */
+    float: right;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* ביטול המרווח הימני לכל תמונה שלישית כדי שלא תרד שורה */
+.gallery-item:nth-child(3n+1) {
+    /* הערה: בגלל שאנחנו ב-RTL ו-Float:right, ה-margin הוא הפוך */
+}
+
+/* פתרון פשוט יותר למניעת ירידת שורה במבחן: */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   7. BACK TO TOP BUTTON (חזרה למעלה)
+   ========================================= */
+.back-to-top {
+    position: fixed; /* נשאר במיקום קבוע במסך */
+    bottom: 20px;
+    left: 20px; /* צד שמאל כי האתר בימין */
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #16a085;
+}
+
+/* בונוס: גלילה חלקה (אם הדפדפן תומך) */
+html {
+    scroll-behavior: smooth;
+}
